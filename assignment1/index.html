@@ -3,28 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internal-style {
+            font-style: italic;
+            color: #8e44ad;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My First Webpage</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
 
-    <p>Hello! My name is Pratik, and this is my first webpage created using basic HTML. I am excited to start learning web development.</p>
+    <div class="main-content">
+        <div class="important-box">
+            Important!
+        </div>
 
-    <h3>My Hobbies</h3>
-    <ol>
-        <li>Coding</li>
-        <li>Playing Football</li>
-        <li>Reading Books</li>
-    </ol>
+        <h1 id="special-heading">Welcome to My First Webpage</h1>
 
-    <h3>My Favorite Foods</h3>
-    <ul>
-        <li><strong>Momo</strong></li>
-        <li><em>Pasta</em></li>
-        <li><u>Pizza</u></li>
-    </ul>
+        <p class="highlight">Hello! My name is Pratik, and this is my first webpage created using basic HTML. I am excited to start learning web development.</p>
 
-    <a href="about.html">Go to About Page</a>
+        <p style="color: #16a085; font-weight: bold;">This paragraph uses inline CSS for styling.</p>
+
+        <div class="box-model-demo">
+            <p>This div demonstrates the box model with width: 300px, padding: 20px, border: 2px solid black, margin: 15px, and box-sizing: border-box.</p>
+        </div>
+
+        <div class="styled-div">
+            <p>This is a styled div with custom background and text color. It contains a <span class="styled-span">styled span element</span> within the paragraph.</p>
+        </div>
+
+        <h3 class="sticky-heading">My Hobbies</h3>
+        <ol>
+            <li>Coding</li>
+            <li>Playing Football</li>
+            <li>Reading Books</li>
+        </ol>
+
+        <p>I enjoy spending time coding and building new projects. Each project teaches me something valuable and helps me grow as a developer. I also love collaborating with others and learning from their experiences.</p>
+
+        <p>Beyond coding, I make sure to stay active by playing football and reading books. These hobbies help me maintain a balanced lifestyle and keep my mind fresh for problem solving and creative thinking.</p>
+
+        <h3 style="text-align: center;">My Favorite Foods</h3>
+        <ul>
+            <li><strong>Momo</strong></li>
+            <li><em>Pasta</em></li>
+            <li><u>Pizza</u></li>
+        </ul>
+
+        <p class="internal-style">This paragraph is styled using internal CSS from the style tag in the head section.</p>
+
+        <p>Web development is an exciting field that combines creativity with technical skills. Learning HTML and CSS is the first step towards building amazing websites.</p>
+
+        <p>As I continue my journey in web development, I discover new techniques and best practices every day. The possibilities are endless when it comes to creating interactive and beautiful web experiences.</p>
+
+        <p>I am particularly interested in responsive design and making websites that work well on all devices. This ensures that users have a great experience whether they are on a phone, tablet, or computer.</p>
+
+        <p>In the future, I plan to learn JavaScript, React, and other modern web technologies. These tools will help me create dynamic and powerful web applications that can solve real world problems.</p>
+
+        <a href="about.html">Go to About Page</a>
+    </div>
 
 </body>
 </html>

@@ -3,51 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h2>Feedback Form</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
 
-    <form>
+    <div class="main-content">
+        <h2>Feedback Form</h2>
 
-       
-        <label>Full Name:</label><br>
-        <input type="text" name="fullname" required minlength="3" placeholder="Enter your full name"><br><br>
+        <p>We'd love to hear from you! Please fill out the form below to share your feedback.</p>
 
-        
-        <label>Email Address:</label><br>
-        <input type="email" name="email" required placeholder="example@gmail.com"><br><br>
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required minlength="3" placeholder="Enter your full name"><br><br>
 
-      
-        <label>Rate Your Experience:</label><br>
-        <input type="radio" name="rating" value="Very Satisfied" required> Very Satisfied<br>
-        <input type="radio" name="rating" value="Satisfied"> Satisfied<br>
-        <input type="radio" name="rating" value="Neutral"> Neutral<br>
-        <input type="radio" name="rating" value="Unsatisfied"> Unsatisfied<br><br>
+            <label>Email Address:</label><br>
+            <input type="email" name="email" required placeholder="example@gmail.com"><br><br>
 
-       
-        <label>Your Interests:</label><br>
-        <input type="checkbox" name="interest" value="Web Development"> Web Development<br>
-        <input type="checkbox" name="interest" value="Mobile Development"> Mobile Development<br>
-        <input type="checkbox" name="interest" value="AI & ML"> AI & Machine Learning<br><br>
+            <label>Rate Your Experience:</label><br>
+            <input type="radio" name="rating" value="Very Satisfied" required> Very Satisfied<br>
+            <input type="radio" name="rating" value="Satisfied"> Satisfied<br>
+            <input type="radio" name="rating" value="Neutral"> Neutral<br>
+            <input type="radio" name="rating" value="Unsatisfied"> Unsatisfied<br><br>
 
-        
-        <label>Select Country:</label><br>
-        <select name="country" required>
-            <option value="">--Choose--</option>
-            <option>Nepal</option>
-            <option>India</option>
-            <option>USA</option>
-        </select><br><br>
+            <label>Your Interests:</label><br>
+            <input type="checkbox" name="interest" value="Web Development"> Web Development<br>
+            <input type="checkbox" name="interest" value="Mobile Development"> Mobile Development<br>
+            <input type="checkbox" name="interest" value="AI & ML"> AI & Machine Learning<br><br>
 
-       
-        <label>Write your feedback here:</label><br>
-        <textarea name="message" rows="5" cols="30" maxlength="300" placeholder="Write your feedback here"></textarea><br><br>
+            <label>Select Country:</label><br>
+            <select name="country" required>
+                <option value="">--Choose--</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>USA</option>
+            </select><br><br>
 
-        
-        <button type="submit">Submit</button>
+            <label>Write your feedback here:</label><br>
+            <textarea name="message" rows="5" cols="30" maxlength="300" placeholder="Write your feedback here"></textarea><br><br>
 
-    </form>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
 </body>
 </html>
