@@ -3,7 +3,8 @@ fetch('https://jsonplaceholder.typicode.com/comments')
         return response.json();
       })
       .then(function(comments) {
-        document.getElementById('status').textContent = '';
+        var stat = document.getElementById('status');
+        stat.textContent = '';
         var list = document.getElementById('list');
 
         comments.forEach(function(comment) {
@@ -15,5 +16,5 @@ fetch('https://jsonplaceholder.typicode.com/comments')
         });
       })
       .catch(function() {
-        document.getElementById('status').textContent = 'Failed to load data';
+        stat.textContent = 'Failed to load data';
       });
