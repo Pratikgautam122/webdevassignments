@@ -1,0 +1,31 @@
+SET A – Frontend Practical Exam
+Q1. Fetch API (25 Marks)
+Use the fetch() function to retrieve comments data from a mock COMMENTS API
+Requirements:
+● Create a complete HTML file.
+● Fetch data from a public mock API COMMENTS API
+● Display the fetched data in a <ul> list format.
+● Each list item should show:
+○ Comment name
+○ Email
+○ Comment body
+● While data is being fetched, display a "Loading..." message on the screen.
+● If an error occurs, show "Failed to load data".
+
+Q2. Pattern (5 Marks)
+Write a JavaScript function using a for loop to print the following pattern:
+Right-Aligned Triangle
+Example:
+*
+**
+***
+****
+*****
+
+Q3. Promise – Login Simulation (10 Marks)
+Add a "Login" button to an HTML page.
+When clicked:
+● Show the message "Logging in..."
+● Simulate login using a Promise that resolves after 2 seconds
+● After resolution, display "Welcome back!"
+● Disable button while processing
